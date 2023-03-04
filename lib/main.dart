@@ -105,22 +105,18 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-
             Row(
-          children: [
-            ElevatedButton(
-            style: ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20)),
-            onPressed: _decrementCounter,
-            child: const Text('Decrement Counter'),
-            ),
-          ],
-          )
-          
+              children: [
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      textStyle: const TextStyle(fontSize: 20)),
+                  onPressed: _decrementCounter,
+                  child: const Text('Decrement Counter'),
+                ),
+              ],
+            )
           ],
         ),
-        
-        
-          
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
